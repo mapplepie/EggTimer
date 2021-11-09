@@ -13,8 +13,9 @@
 		12CA7834273A14F400393170 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12CA7832273A14F400393170 /* Main.storyboard */; };
 		12CA7836273A14FA00393170 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12CA7835273A14FA00393170 /* Assets.xcassets */; };
 		12CA7839273A14FA00393170 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12CA7837273A14FA00393170 /* LaunchScreen.storyboard */; };
-		12CA7841273A340500393170 /* Permanent_Marker in Resources */ = {isa = PBXBuildFile; fileRef = 12CA7840273A340500393170 /* Permanent_Marker */; };
 		12CA7843273A732900393170 /* Rooster-morning-call.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 12CA7842273A732800393170 /* Rooster-morning-call.mp3 */; };
+		12CA784D273A802300393170 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CA784C273A802300393170 /* Constants.swift */; };
+		12CA784F273A8F8F00393170 /* Lobster in Resources */ = {isa = PBXBuildFile; fileRef = 12CA784E273A8F8F00393170 /* Lobster */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +27,9 @@
 		12CA7835273A14FA00393170 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12CA7838273A14FA00393170 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12CA783A273A14FA00393170 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		12CA7840273A340500393170 /* Permanent_Marker */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Permanent_Marker; sourceTree = "<group>"; };
 		12CA7842273A732800393170 /* Rooster-morning-call.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rooster-morning-call.mp3"; sourceTree = "<group>"; };
+		12CA784C273A802300393170 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		12CA784E273A8F8F00393170 /* Lobster */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Lobster; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +62,7 @@
 		12CA782B273A14F400393170 /* EggTimer */ = {
 			isa = PBXGroup;
 			children = (
-				12CA7840273A340500393170 /* Permanent_Marker */,
+				12CA7845273A7EA500393170 /* Fonts */,
 				12CA782C273A14F400393170 /* AppDelegate.swift */,
 				12CA782E273A14F400393170 /* SceneDelegate.swift */,
 				12CA7830273A14F400393170 /* ViewController.swift */,
@@ -69,8 +71,17 @@
 				12CA7837273A14FA00393170 /* LaunchScreen.storyboard */,
 				12CA783A273A14FA00393170 /* Info.plist */,
 				12CA7842273A732800393170 /* Rooster-morning-call.mp3 */,
+				12CA784C273A802300393170 /* Constants.swift */,
 			);
 			path = EggTimer;
+			sourceTree = "<group>";
+		};
+		12CA7845273A7EA500393170 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				12CA784E273A8F8F00393170 /* Lobster */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,10 +143,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				12CA7839273A14FA00393170 /* LaunchScreen.storyboard in Resources */,
+				12CA784F273A8F8F00393170 /* Lobster in Resources */,
 				12CA7843273A732900393170 /* Rooster-morning-call.mp3 in Resources */,
 				12CA7836273A14FA00393170 /* Assets.xcassets in Resources */,
 				12CA7834273A14F400393170 /* Main.storyboard in Resources */,
-				12CA7841273A340500393170 /* Permanent_Marker in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +160,7 @@
 				12CA7831273A14F400393170 /* ViewController.swift in Sources */,
 				12CA782D273A14F400393170 /* AppDelegate.swift in Sources */,
 				12CA782F273A14F400393170 /* SceneDelegate.swift in Sources */,
+				12CA784D273A802300393170 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

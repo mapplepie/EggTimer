@@ -24,10 +24,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        titleLabel.font = UIFont(name: "Permanent_Marker", size: 40)
-        softText.titleLabel?.font = UIFont(name: "Permanent_Marker", size: 30)
-        mediumText.titleLabel?.font = UIFont(name: "Permanent_Marker", size: 30)
-        hardText.titleLabel?.font = UIFont(name: "Permanent_Marker", size: 30)
+//        let label: UILabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 120))
+//            
+//               label.font = UIFont(name: "Lobster-Regular", size: 35)
+              
+//        let titleLabel = titleLabel
+//        titleLabel?.font = UIFont(name: "Lobster-Regular.ttf", size: 50)
+//        softText.titleLabel?.font = UIFont(name: "Lobster-Regular.ttf", size: 30)
+//        mediumText.titleLabel?.font = UIFont(name: "Lobster-Regular.ttf", size: 30)
+//        hardText.titleLabel?.font = UIFont(name: "Lobster-Regular.ttf", size: 30)
         
     }
     @IBAction func hardnessSelected(_ sender: UIButton) {
