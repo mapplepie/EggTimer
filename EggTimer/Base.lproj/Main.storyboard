@@ -30,14 +30,14 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="272.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="puC-Xe-fSp">
-                                                <rect key="frame" x="8" y="0.0" width="406" height="272.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="272.5"/>
                                                 <fontDescription key="fontDescription" name="PermanentMarker-Regular" family="Permanent Marker" pointSize="40"/>
                                                 <color key="textColor" name="Text"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="puC-Xe-fSp" firstAttribute="leading" secondItem="992-v7-FH0" secondAttribute="leadingMargin" id="51Q-Oc-o5C"/>
+                                            <constraint firstItem="puC-Xe-fSp" firstAttribute="leadingMargin" secondItem="992-v7-FH0" secondAttribute="leadingMargin" id="51Q-Oc-o5C"/>
                                             <constraint firstAttribute="trailing" secondItem="puC-Xe-fSp" secondAttribute="trailing" id="UnP-oZ-4Ld"/>
                                             <constraint firstItem="puC-Xe-fSp" firstAttribute="top" secondItem="992-v7-FH0" secondAttribute="top" id="ZOO-4d-daC"/>
                                             <constraint firstAttribute="bottom" secondItem="puC-Xe-fSp" secondAttribute="bottom" id="kdP-Vy-P4T"/>
@@ -50,24 +50,26 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="131.5" height="273"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Soft 2" translatesAutoresizingMaskIntoConstraints="NO" id="yqv-MM-j7z">
-                                                        <rect key="frame" x="0.0" y="0.0" width="131.5" height="273"/>
+                                                        <rect key="frame" x="-8" y="0.0" width="139.5" height="273"/>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f92-rM-138">
-                                                        <rect key="frame" x="0.0" y="0.0" width="131.5" height="273"/>
+                                                        <rect key="frame" x="-8" y="0.0" width="139.5" height="273"/>
+                                                        <fontDescription key="fontDescription" name="PermanentMarker-Regular" family="Permanent Marker" pointSize="30"/>
                                                         <color key="tintColor" systemColor="labelColor"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Soft">
-                                                            <fontDescription key="titleFontDescription" name="PermanentMarker-Regular" family="Permanent Marker" pointSize="30"/>
-                                                        </buttonConfiguration>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Soft"/>
+                                                        <connections>
+                                                            <action selector="hardnessSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oan-gv-jnT"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstItem="f92-rM-138" firstAttribute="top" secondItem="DsL-4d-Yyy" secondAttribute="top" id="13M-tE-iwm"/>
-                                                    <constraint firstItem="f92-rM-138" firstAttribute="leading" secondItem="DsL-4d-Yyy" secondAttribute="leading" id="8fb-ox-ZvA"/>
+                                                    <constraint firstItem="f92-rM-138" firstAttribute="leadingMargin" secondItem="DsL-4d-Yyy" secondAttribute="leading" id="8fb-ox-ZvA"/>
                                                     <constraint firstAttribute="trailing" secondItem="yqv-MM-j7z" secondAttribute="trailing" id="ACM-42-nyk"/>
                                                     <constraint firstAttribute="trailing" secondItem="f92-rM-138" secondAttribute="trailing" id="Q0V-3K-m2k"/>
                                                     <constraint firstAttribute="bottom" secondItem="yqv-MM-j7z" secondAttribute="bottom" id="bBO-lu-gnd"/>
-                                                    <constraint firstItem="yqv-MM-j7z" firstAttribute="leading" secondItem="DsL-4d-Yyy" secondAttribute="leading" id="fiD-al-sxc"/>
+                                                    <constraint firstItem="yqv-MM-j7z" firstAttribute="leadingMargin" secondItem="DsL-4d-Yyy" secondAttribute="leading" id="fiD-al-sxc"/>
                                                     <constraint firstItem="yqv-MM-j7z" firstAttribute="top" secondItem="DsL-4d-Yyy" secondAttribute="top" id="hWo-SC-txP"/>
                                                     <constraint firstAttribute="bottom" secondItem="f92-rM-138" secondAttribute="bottom" id="n0H-Eu-x7Z"/>
                                                 </constraints>
@@ -80,11 +82,13 @@
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpZ-xP-yjc">
                                                         <rect key="frame" x="0.0" y="0.0" width="131" height="273"/>
+                                                        <fontDescription key="fontDescription" name="PermanentMarker-Regular" family="Permanent Marker" pointSize="28"/>
                                                         <color key="tintColor" systemColor="labelColor"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Medium">
-                                                            <fontDescription key="titleFontDescription" name="PermanentMarker-Regular" family="Permanent Marker" pointSize="28"/>
-                                                        </buttonConfiguration>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Medium"/>
+                                                        <connections>
+                                                            <action selector="hardnessSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rcN-X6-g2S"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -106,11 +110,13 @@
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPw-vF-1Jo">
                                                         <rect key="frame" x="0.0" y="0.0" width="131.5" height="273"/>
+                                                        <fontDescription key="fontDescription" name="PermanentMarker-Regular" family="Permanent Marker" pointSize="30"/>
                                                         <color key="tintColor" systemColor="labelColor"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Button">
-                                                            <fontDescription key="titleFontDescription" name="PermanentMarker-Regular" family="Permanent Marker" pointSize="30"/>
-                                                        </buttonConfiguration>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Hard"/>
+                                                        <connections>
+                                                            <action selector="hardnessSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dae-aa-61j"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -130,7 +136,7 @@
                                         <rect key="frame" x="0.0" y="545.5" width="414" height="272.5"/>
                                         <subviews>
                                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="dij-jf-PWU">
-                                                <rect key="frame" x="0.0" y="133.5" width="414" height="6"/>
+                                                <rect key="frame" x="8" y="133.5" width="406" height="6"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <color key="tintColor" name="Text"/>
                                                 <constraints>
@@ -140,8 +146,8 @@
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="dij-jf-PWU" firstAttribute="centerY" secondItem="6XH-7I-lgI" secondAttribute="centerY" id="JiP-mZ-hwc"/>
-                                            <constraint firstItem="dij-jf-PWU" firstAttribute="leading" secondItem="6XH-7I-lgI" secondAttribute="leading" id="OqM-nF-j8t"/>
-                                            <constraint firstAttribute="trailing" secondItem="dij-jf-PWU" secondAttribute="trailing" id="nHE-IA-U9F"/>
+                                            <constraint firstItem="dij-jf-PWU" firstAttribute="leading" secondItem="6XH-7I-lgI" secondAttribute="leadingMargin" id="OqM-nF-j8t"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="dij-jf-PWU" secondAttribute="trailingMargin" id="nHE-IA-U9F"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -156,6 +162,13 @@
                             <constraint firstAttribute="trailing" secondItem="aUV-xp-f9C" secondAttribute="trailing" id="zZI-Og-M0y"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="hardText" destination="fPw-vF-1Jo" id="HmF-ZN-ewg"/>
+                        <outlet property="mediumText" destination="jpZ-xP-yjc" id="pkC-LI-G2H"/>
+                        <outlet property="progressBar" destination="dij-jf-PWU" id="GqV-Jg-zSn"/>
+                        <outlet property="softText" destination="f92-rM-138" id="eZK-tr-hPq"/>
+                        <outlet property="titleLabel" destination="puC-Xe-fSp" id="X9p-J2-8Cg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -14,6 +14,7 @@
 		12CA7836273A14FA00393170 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12CA7835273A14FA00393170 /* Assets.xcassets */; };
 		12CA7839273A14FA00393170 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12CA7837273A14FA00393170 /* LaunchScreen.storyboard */; };
 		12CA7841273A340500393170 /* Permanent_Marker in Resources */ = {isa = PBXBuildFile; fileRef = 12CA7840273A340500393170 /* Permanent_Marker */; };
+		12CA7843273A732900393170 /* Rooster-morning-call.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 12CA7842273A732800393170 /* Rooster-morning-call.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		12CA7838273A14FA00393170 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12CA783A273A14FA00393170 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12CA7840273A340500393170 /* Permanent_Marker */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Permanent_Marker; sourceTree = "<group>"; };
+		12CA7842273A732800393170 /* Rooster-morning-call.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rooster-morning-call.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				12CA7835273A14FA00393170 /* Assets.xcassets */,
 				12CA7837273A14FA00393170 /* LaunchScreen.storyboard */,
 				12CA783A273A14FA00393170 /* Info.plist */,
+				12CA7842273A732800393170 /* Rooster-morning-call.mp3 */,
 			);
 			path = EggTimer;
 			sourceTree = "<group>";
@@ -129,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12CA7839273A14FA00393170 /* LaunchScreen.storyboard in Resources */,
+				12CA7843273A732900393170 /* Rooster-morning-call.mp3 in Resources */,
 				12CA7836273A14FA00393170 /* Assets.xcassets in Resources */,
 				12CA7834273A14F400393170 /* Main.storyboard in Resources */,
 				12CA7841273A340500393170 /* Permanent_Marker in Resources */,
@@ -289,8 +293,8 @@
 		12CA783E273A14FA00393170 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -317,8 +321,8 @@
 		12CA783F273A14FA00393170 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
