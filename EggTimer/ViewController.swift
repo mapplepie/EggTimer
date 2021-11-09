@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
@@ -15,17 +16,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var mediumText: UIButton!
     @IBOutlet weak var hardText: UIButton!
     
-    private let eggTimes = ["Soft": 3, "Medium": 4, "Hard": 7]
+    private let eggTimes = ["Soft": 240 , "Medium": 360, "Hard": 720]
     
     private var timer = Timer()
-    private var secondPassed = 0
+    private var secondRemaining = 0
     private var totalTime = 0
+    private var player: AVAudioPlayer!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
 //        let label: UILabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 120))
-//            
+//
 //               label.font = UIFont(name: "Lobster-Regular", size: 35)
               
 //        let titleLabel = titleLabel
@@ -42,19 +45,23 @@ class ViewController: UIViewController {
         totalTime = eggTimes[hardness]!
         
         progressBar.progress = 0.0
-        secondPassed = 0
+        secondRemaining = 0
         titleLabel.text = hardness
-        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
             
     }
     
     @objc func timerAction() {
-        if secondPassed < totalTime {
-            secondPassed += 1
-            progressBar.progress = Float(secondPassed)/Float(totalTime)
+        if secondRemaining < totalTime{
+            secondRemaining += 1
+            progressBar.progress = Float(secondRemaining)/Float(totalTime)
         }else{
             timer.invalidate()
             titleLabel.text = "Done!"
+            
+            let url = Bundle.main.url(forResource: "Rooster-morning-call", withExtension: "mp3")
+            player = try! AVAudioPlayer(contentsOf: url!)
+            player.play()
         }
         }
     
