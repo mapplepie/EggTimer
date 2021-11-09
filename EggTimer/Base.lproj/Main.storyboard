@@ -1,24 +1,182 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="PermanentMarker-Regular.ttf">
+            <string>PermanentMarker-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EggTimer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="aUV-xp-f9C">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="992-v7-FH0" userLabel="Title View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="272.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="puC-Xe-fSp">
+                                                <rect key="frame" x="8" y="0.0" width="406" height="272.5"/>
+                                                <fontDescription key="fontDescription" name="PermanentMarker-Regular" family="Permanent Marker" pointSize="40"/>
+                                                <color key="textColor" name="Text"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="puC-Xe-fSp" firstAttribute="leading" secondItem="992-v7-FH0" secondAttribute="leadingMargin" id="51Q-Oc-o5C"/>
+                                            <constraint firstAttribute="trailing" secondItem="puC-Xe-fSp" secondAttribute="trailing" id="UnP-oZ-4Ld"/>
+                                            <constraint firstItem="puC-Xe-fSp" firstAttribute="top" secondItem="992-v7-FH0" secondAttribute="top" id="ZOO-4d-daC"/>
+                                            <constraint firstAttribute="bottom" secondItem="puC-Xe-fSp" secondAttribute="bottom" id="kdP-Vy-P4T"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="w4g-Xd-g1a" userLabel="EggStackView">
+                                        <rect key="frame" x="0.0" y="272.5" width="414" height="273"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DsL-4d-Yyy" userLabel="SoftView">
+                                                <rect key="frame" x="0.0" y="0.0" width="131.5" height="273"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Soft 2" translatesAutoresizingMaskIntoConstraints="NO" id="yqv-MM-j7z">
+                                                        <rect key="frame" x="0.0" y="0.0" width="131.5" height="273"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f92-rM-138">
+                                                        <rect key="frame" x="0.0" y="0.0" width="131.5" height="273"/>
+                                                        <color key="tintColor" systemColor="labelColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Soft">
+                                                            <fontDescription key="titleFontDescription" name="PermanentMarker-Regular" family="Permanent Marker" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="f92-rM-138" firstAttribute="top" secondItem="DsL-4d-Yyy" secondAttribute="top" id="13M-tE-iwm"/>
+                                                    <constraint firstItem="f92-rM-138" firstAttribute="leading" secondItem="DsL-4d-Yyy" secondAttribute="leading" id="8fb-ox-ZvA"/>
+                                                    <constraint firstAttribute="trailing" secondItem="yqv-MM-j7z" secondAttribute="trailing" id="ACM-42-nyk"/>
+                                                    <constraint firstAttribute="trailing" secondItem="f92-rM-138" secondAttribute="trailing" id="Q0V-3K-m2k"/>
+                                                    <constraint firstAttribute="bottom" secondItem="yqv-MM-j7z" secondAttribute="bottom" id="bBO-lu-gnd"/>
+                                                    <constraint firstItem="yqv-MM-j7z" firstAttribute="leading" secondItem="DsL-4d-Yyy" secondAttribute="leading" id="fiD-al-sxc"/>
+                                                    <constraint firstItem="yqv-MM-j7z" firstAttribute="top" secondItem="DsL-4d-Yyy" secondAttribute="top" id="hWo-SC-txP"/>
+                                                    <constraint firstAttribute="bottom" secondItem="f92-rM-138" secondAttribute="bottom" id="n0H-Eu-x7Z"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vbv-Gs-xVJ" userLabel="MediumView">
+                                                <rect key="frame" x="141.5" y="0.0" width="131" height="273"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Medium 2" translatesAutoresizingMaskIntoConstraints="NO" id="LQl-ru-fSz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="131" height="273"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpZ-xP-yjc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="131" height="273"/>
+                                                        <color key="tintColor" systemColor="labelColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Medium">
+                                                            <fontDescription key="titleFontDescription" name="PermanentMarker-Regular" family="Permanent Marker" pointSize="28"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="LQl-ru-fSz" firstAttribute="top" secondItem="vbv-Gs-xVJ" secondAttribute="top" id="3hu-ns-xOQ"/>
+                                                    <constraint firstItem="LQl-ru-fSz" firstAttribute="leading" secondItem="vbv-Gs-xVJ" secondAttribute="leading" id="JSc-HU-4WP"/>
+                                                    <constraint firstAttribute="trailing" secondItem="jpZ-xP-yjc" secondAttribute="trailing" id="KB2-18-atk"/>
+                                                    <constraint firstAttribute="trailing" secondItem="LQl-ru-fSz" secondAttribute="trailing" id="RYb-xd-HQP"/>
+                                                    <constraint firstItem="jpZ-xP-yjc" firstAttribute="top" secondItem="vbv-Gs-xVJ" secondAttribute="top" id="XUc-8u-jAf"/>
+                                                    <constraint firstItem="jpZ-xP-yjc" firstAttribute="leading" secondItem="vbv-Gs-xVJ" secondAttribute="leading" id="eNu-Xv-04N"/>
+                                                    <constraint firstAttribute="bottom" secondItem="jpZ-xP-yjc" secondAttribute="bottom" id="fVv-rw-HMT"/>
+                                                    <constraint firstAttribute="bottom" secondItem="LQl-ru-fSz" secondAttribute="bottom" id="w2c-ui-wfa"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tZM-yc-HhY" userLabel="HardView">
+                                                <rect key="frame" x="282.5" y="0.0" width="131.5" height="273"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hard 2" translatesAutoresizingMaskIntoConstraints="NO" id="QuY-0U-Aua">
+                                                        <rect key="frame" x="0.0" y="0.0" width="131.5" height="273"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPw-vF-1Jo">
+                                                        <rect key="frame" x="0.0" y="0.0" width="131.5" height="273"/>
+                                                        <color key="tintColor" systemColor="labelColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                                            <fontDescription key="titleFontDescription" name="PermanentMarker-Regular" family="Permanent Marker" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="QuY-0U-Aua" firstAttribute="leading" secondItem="tZM-yc-HhY" secondAttribute="leading" id="3j1-7E-424"/>
+                                                    <constraint firstAttribute="bottom" secondItem="fPw-vF-1Jo" secondAttribute="bottom" id="5rc-c9-HTS"/>
+                                                    <constraint firstAttribute="trailing" secondItem="fPw-vF-1Jo" secondAttribute="trailing" id="Buf-ET-oG4"/>
+                                                    <constraint firstItem="fPw-vF-1Jo" firstAttribute="leading" secondItem="tZM-yc-HhY" secondAttribute="leading" id="I9a-Ss-QJO"/>
+                                                    <constraint firstItem="QuY-0U-Aua" firstAttribute="top" secondItem="tZM-yc-HhY" secondAttribute="top" id="eXU-ev-b5O"/>
+                                                    <constraint firstItem="fPw-vF-1Jo" firstAttribute="top" secondItem="tZM-yc-HhY" secondAttribute="top" id="guG-3N-YmM"/>
+                                                    <constraint firstAttribute="trailing" secondItem="QuY-0U-Aua" secondAttribute="trailing" id="pvw-OF-uO1"/>
+                                                    <constraint firstAttribute="bottom" secondItem="QuY-0U-Aua" secondAttribute="bottom" id="yHt-cp-TNw"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6XH-7I-lgI" userLabel="TimerView">
+                                        <rect key="frame" x="0.0" y="545.5" width="414" height="272.5"/>
+                                        <subviews>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="dij-jf-PWU">
+                                                <rect key="frame" x="0.0" y="133.5" width="414" height="6"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                <color key="tintColor" name="Text"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="5" id="Dqi-XA-050"/>
+                                                </constraints>
+                                            </progressView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="dij-jf-PWU" firstAttribute="centerY" secondItem="6XH-7I-lgI" secondAttribute="centerY" id="JiP-mZ-hwc"/>
+                                            <constraint firstItem="dij-jf-PWU" firstAttribute="leading" secondItem="6XH-7I-lgI" secondAttribute="leading" id="OqM-nF-j8t"/>
+                                            <constraint firstAttribute="trailing" secondItem="dij-jf-PWU" secondAttribute="trailing" id="nHE-IA-U9F"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="inside"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aUV-xp-f9C" secondAttribute="bottom" id="5kD-Ph-sHO"/>
+                            <constraint firstItem="aUV-xp-f9C" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="CEm-BK-cGu"/>
+                            <constraint firstItem="aUV-xp-f9C" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="U3K-13-xqC"/>
+                            <constraint firstAttribute="trailing" secondItem="aUV-xp-f9C" secondAttribute="trailing" id="zZI-Og-M0y"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Hard 2" width="341" height="341"/>
+        <image name="Medium 2" width="341" height="341"/>
+        <image name="Soft 2" width="341" height="341"/>
+        <namedColor name="Text">
+            <color red="0.87843137250000003" green="0.14117647059999999" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="inside">
+            <color red="1" green="0.90196078430000004" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

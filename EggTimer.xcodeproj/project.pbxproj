@@ -13,6 +13,7 @@
 		12CA7834273A14F400393170 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12CA7832273A14F400393170 /* Main.storyboard */; };
 		12CA7836273A14FA00393170 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12CA7835273A14FA00393170 /* Assets.xcassets */; };
 		12CA7839273A14FA00393170 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12CA7837273A14FA00393170 /* LaunchScreen.storyboard */; };
+		12CA7841273A340500393170 /* Permanent_Marker in Resources */ = {isa = PBXBuildFile; fileRef = 12CA7840273A340500393170 /* Permanent_Marker */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		12CA7835273A14FA00393170 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12CA7838273A14FA00393170 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12CA783A273A14FA00393170 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12CA7840273A340500393170 /* Permanent_Marker */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Permanent_Marker; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		12CA782B273A14F400393170 /* EggTimer */ = {
 			isa = PBXGroup;
 			children = (
+				12CA7840273A340500393170 /* Permanent_Marker */,
 				12CA782C273A14F400393170 /* AppDelegate.swift */,
 				12CA782E273A14F400393170 /* SceneDelegate.swift */,
 				12CA7830273A14F400393170 /* ViewController.swift */,
@@ -128,6 +131,7 @@
 				12CA7839273A14FA00393170 /* LaunchScreen.storyboard in Resources */,
 				12CA7836273A14FA00393170 /* Assets.xcassets in Resources */,
 				12CA7834273A14F400393170 /* Main.storyboard in Resources */,
+				12CA7841273A340500393170 /* Permanent_Marker in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +300,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,6 +328,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
