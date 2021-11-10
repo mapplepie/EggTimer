@@ -10,6 +10,7 @@ import AVFoundation
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var timerNumber: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var softText: UIButton!
@@ -22,21 +23,16 @@ class ViewController: UIViewController {
     private var secondRemaining = 0
     private var totalTime = 0
     private var player: AVAudioPlayer!
+    var startTime:Date?
+    let userDefault = UserDefaults.standard
+    let START_TIME_KEY = "startTime"
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        let label: UILabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 120))
-//
-//               label.font = UIFont(name: "Lobster-Regular", size: 35)
-              
-//        let titleLabel = titleLabel
-//        titleLabel?.font = UIFont(name: "Lobster-Regular.ttf", size: 50)
-//        softText.titleLabel?.font = UIFont(name: "Lobster-Regular.ttf", size: 30)
-//        mediumText.titleLabel?.font = UIFont(name: "Lobster-Regular.ttf", size: 30)
-//        hardText.titleLabel?.font = UIFont(name: "Lobster-Regular.ttf", size: 30)
-        
+        startTime = userDefault.object(forKey: START_TIME_KEY) as? Date
+
     }
     @IBAction func hardnessSelected(_ sender: UIButton) {
         
@@ -47,13 +43,21 @@ class ViewController: UIViewController {
         progressBar.progress = 0.0
         secondRemaining = 0
         titleLabel.text = hardness
+        
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
+        
+       
             
     }
     
-    @objc func timerAction() {
+    @objc  func timerAction() {
         if secondRemaining < totalTime{
             secondRemaining += 1
+            totalTime -= 1
+            let minutesLeft = Int(totalTime) / 60 % 60
+            let secondsLeft = Int(totalTime) % 60
+            timerNumber.text = "\(minutesLeft):\(secondsLeft)"
+            
             progressBar.progress = Float(secondRemaining)/Float(totalTime)
         }else{
             timer.invalidate()
@@ -64,6 +68,11 @@ class ViewController: UIViewController {
             player.play()
         }
         }
+    
+    func setStartTimer(date: Date?){
+        startTime = date
+        userDefault.set(date, forKey: START_TIME_KEY)
+    }
     
     
 }
