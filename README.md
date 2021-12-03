@@ -1,7 +1,7 @@
 # EggTimer
 App that measures the time needed to boil an egg.
 
-##The code I used
+## The code I used
 Swift Collection types - Dictionaries
 The Swift Timer API
 Conditional statements - IF/ELSE
