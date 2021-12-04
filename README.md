@@ -8,3 +8,6 @@ App that measures the time needed to boil an egg.
 * Conditional statements - Switch
 * Functions with outputs
 * How to use the ProgressView
+
+
+<img src="Egg%20Timer/launchScreen.png" width="250" height="500"> || <img src="Egg%20Timer/2.png" width="250" height="500"> 
